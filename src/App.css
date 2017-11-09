@@ -1,0 +1,262 @@
+/* this shit resets everything. I hope */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+  /*background-image: url('http://res.cloudinary.com/averagefail/image/upload/c_scale,h_1476/v1509271849/drops-of-water-water-nature-liquid-40784_1_gslahh.jpg');*/
+  background-color: #ECECEC;
+}
+body {
+	line-height: 1;
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 300;
+}
+html, body {
+  height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	/*border-spacing: 0;*/
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  height: 40vh;
+  margin-top: 2vh;
+  color: white;
+  right-padding: 10px;
+  left-padding: 10px;
+}
+
+.fa-tint {
+  display: inline;
+  text-align: left;
+}
+
+.App-intro {
+  font-size: large;
+}
+h1 {
+  font-weight: normal;
+}
+
+.tagline {
+  font-size: 16px;
+	margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+ .styled_button {
+    padding: 2vw;
+    padding-top: 1vw;
+    display: inline-block;
+     width: 35vh;
+     height: 35vh;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    border-radius: .5vw;
+    font-size: 2.7em;
+}
+
+.styled_button img{
+    height:100%;
+    width:100%;
+}
+
+.learnmore {
+    padding: 1vw;
+    display: inline-block;
+    width: 35vh;
+    height: 6vh;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    border-radius: .5vw;
+}
+
+.learnmore img{
+    height:100%;
+    width:100%;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.results {
+  max-width: 450px;
+  width: 87%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-size: 24px;
+	font-family: inherit;
+	font-weight: inherit;
+	line-height: 1.4em;
+}
+
+.results .result-box {
+  border: 1px solid #ccc;
+  /*border-radius: 5px;*/
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.results h1 {
+  font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.results .total {
+  font-size: 30px;
+}
+
+.results .total-error {
+  font-size: 24px;
+}
+
+.results .total-fact {
+  font-size: 20px;
+  text-align: left;
+}
+
+.results table {
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.results tr {
+  margin: 0;
+  width: 100%;
+	font-size: 24px;
+	line-height: 1.4em;
+}
+
+.results th {
+  padding: 20px 0;
+}
+
+.new-tag {
+	margin: 0;
+	width: 100%;
+	font-size: 24px;
+	line-height: 1.4em;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	padding: 16px 16px 16px 60px;
+	border: none;
+}
+
+.new-tag-div {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.results td {
+  padding: 10px;
+  background: white;/*rgba(230,245,255,0.7);*/
+}
+
+.results tr:not(:first-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.results table tr td button {
+  background-color: white;
+  border: none;
+  color: pink;
+  padding: 16px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.results table tr td button:hover {
+  color: red;
+}
+
+.loader {
+    display: inline-block;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #4C4C4C; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 30px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Credits in footer */
+
+
+.credits {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  bottom: 0;
+  
+}
+.credits span {
+  color: #ff7890;
+}
